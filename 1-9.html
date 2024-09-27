@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	<script>
+		// инициализация переменных
+        let person = new Array();
+            person[0] = 'Карамзин';
+            person[1] = 'Виктор'; 
+            person[2] = 'Геннадьевич';
+            person[3] = 'Преподаватель специальных дисциплин';
+            person[4] = "Высшее";
+            person[5] = "Первая";
+            person[6] = "Московский государственный институт электронной техники (техничсекий университет)";
+            person[7] = "Информатика";
+            person[8] = "";
+	</script>
+</head>
+
+<body>
+	
+	<header>
+		<h1 align = "center">Преподаватели</h1>
+	</header>	
+	
+	<div class="content">
+		<script>
+			// выведем значения переменных
+			document.write(`<h2>${person[0]} ${person[1]} ${person[2]}</h2>`);
+			document.write(`<p><i>Должность</i>: ${person[3]}</p>`);
+			document.write(`<p><i>Уровень образования</i>: ${person[4]}</p>`);
+			document.write(`<p><i>Категория</i>: ${person[5]}</p>`);
+			document.write(`<p><i>Образование</i>: ${person[6]}</p>`);
+            document.write(`<p><i>Дисциплина</i>: ${person[7]}</p>`);
+            document.write(`<p><i>Примечание</i>: ${person[8]}</p>`);  
+		</script>
+	</div>
+
+</body>
+</html>
