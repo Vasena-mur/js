@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	<script>
+		// инициализация переменных
+		let surname  = 'Карамзин';
+		let name = 'Виктор'; 
+		let patronymic = 'Геннадьевич';
+		let ocupation = 'Преподаватель специальных дисциплин';
+        let degree = "Высшее";
+        let category = "Первая";
+        let education = "Московский государственный институт электронной техники (техничсекий университет)";
+        let discipline = "Информатика";
+        let note = "";
+	</script>
+</head>
+
+<body>
+	
+	<header>
+		<h1 align = "center">Преподаватели</h1>
+	</header>	
+	
+	<div class="content">
+		<script>
+			// выведем значения переменных
+			document.write(`<h2>${surname} ${name} ${patronymic}</h2>`);
+			document.write(`<p><i>Должность</i>: ${ocupation}</p>`);
+			document.write(`<p><i>Уровень образования</i>: ${degree}</p>`);
+			document.write(`<p><i>Категория</i>: ${category}</p>`);
+			document.write(`<p><i>Образование</i>: ${education}</p>`);
+            document.write(`<p><i>Дисциплина</i>: ${discipline}</p>`);
+            document.write(`<p><i>Примечание</i>: ${note}</p>`);  
+		</script>
+	</div>
+
+</body>
+</html>
