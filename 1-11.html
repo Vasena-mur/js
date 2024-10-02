@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	<script>
+		// инициализация переменных
+        let person = new Object();
+            person.surename = 'Карамзин';
+            person.name = 'Виктор'; 
+            person.potron = 'Геннадьевич';
+            person.ocupation = 'Преподаватель специальных дисциплин';
+            person.degree = "Высшее";
+            person.category = "Первая";
+            person.education = "Московский государственный институт электронной техники (техничсекий университет)";
+            person.discipline = "Информатика";
+            person.note = "";
+	</script>
+</head>
+
+<body>
+	
+	<header>
+		<h1 align = "center">Преподаватели</h1>
+	</header>	
+	
+	<div class="content">
+		<script>
+            let line = `<h2>${person.surename} ${person.name} ${person.potron}</h2> <p><i>Должность</i>: ${person.ocupation}</p> <p><i>Уровень образования</i>: ${person.degree}</p> <p><i>Категория</i>: ${person.category}</p> <p><i>Образование</i>: ${person.education}</p> <p><i>Дисциплина</i>: ${person.discipline}</p> <p><i>Примечание</i>: ${person.note}</p>`;
+			// выведем значения переменных
+            document.write(line);
+			// document.write(`<h2>${person.surename} ${person.name} ${person.potron}</h2>`);
+			// document.write(`<p><i>Должность</i>: ${person.ocupation}</p>`);
+			// document.write(`<p><i>Уровень образования</i>: ${person.degree}</p>`);
+			// document.write(`<p><i>Категория</i>: ${person.category}</p>`);
+			// document.write(`<p><i>Образование</i>: ${person.education}</p>`);
+            // document.write(`<p><i>Дисциплина</i>: ${person.discipline}</p>`);
+            // document.write(`<p><i>Примечание</i>: ${person.note}</p>`);  
+		</script>
+	</div>
+
+</body>
+</html>
