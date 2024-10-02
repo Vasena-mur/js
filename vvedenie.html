@@ -7,6 +7,7 @@
 </head>
 <body>
     <script>
+        document.write(`<h3> Задание 1</h3>`)
         for(let i = 13; i < 1114; i++){
 
             if((i % 3 == 0) && (i % 5 == 0)){
@@ -19,6 +20,19 @@
                 document.write(`${i}, `);
             }
         }
+        document.write(`<h3> Задание 2</h3>`)
+        document.write(`<h5> Введите 2 числа</h5>`);
+        let a = prompt ('Ввведите первое число ');
+        let b = prompt ('Ввведите второе число ');
+        document.write (`Числа: ${a} и ${b}`);
+        document.write (`</br>`);
+        if (a>b){
+            document.write (`Первое число больше ${a}`);
+        }
+        else{
+            document.write (`Второе число больше  ${b}`);
+        }
+
     </script>
 </body>
 </html>
